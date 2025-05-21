@@ -9,72 +9,108 @@
     <link rel="stylesheet" href="introduccion.css">
 </head>
 <body>
+    <header>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav_act nav-link active" aria-current="page" href="#">Intro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </header>
     <section class="container">
         <section class="cont">
             <h1>Arquitectura de capas</h1>
-            <p>La arquitectura en capas es un patrón de arquitectura software usada en la gran mayoría de sistemas. Se centra en una distribución jerárquica de las roles y responsabilidades proporcionando una separación efectiva de las preocupaciones (cada cual se encarga de lo que le cooresponde). Al pensar en un sistema en términos de capas, se imaginan los principales subsistemas de software ubicados de la misma forma que las capas de un pastel, donde cada capa descansa sobre la inferior.</p>
+            <p>La arquitectura en capas es un patrón de arquitectura software usada en la gran mayoría de sistemas. Se centra en una distribución jerárquica de las roles y responsabilidades proporcionando una separación efectiva de las preocupaciones (cada cual se encarga de lo que le coresponde). Al pensar en un sistema en términos de capas, se imaginan los principales subsistemas de software ubicados de la misma forma que las capas de un pastel, donde cada capa descansa sobre la inferior.</p>
             <p>La Arquitectura de Capas comenzó en la década de 1960. Evolucionó con el desarrollo de sistemas cliente-servidor en los años 80. Hoy en día, es popular en aplicaciones empresariales, adaptándose a nuevas tecnologías.</p>
         </section>
         <section class="cont_models cont">
             <h2>Modelos similares</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                    <img id="img_model_1" src="img/monolitico.png" class="card-img-top" alt="monolitico">
-                        <div class="card-body">
-                            <h5 class="card-title">Arquitectura monolítica</h5>
-                            <p class="card-text">El estilo arquitectónico monolítico consiste en crear una aplicación autosuficiente que contenga absolutamente toda la funcionalidad necesaria para realizar la tarea para la cual fue diseñada, sin contar con dependencias externas que complementen su funcionalidad. En este sentido, sus componentes trabajan juntos, compartiendo los mismos recursos y memoria. En pocas palabras, una aplicación monolítica es una unidad cohesiva de código.</p>
-                        </div>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4 cont_img_model">
+                    <img src="img/monolitico.png" id="img_model_1" class="img-fluid rounded-start" alt="monolitico">
+                    </div>
+                    <div class="col-md-8 cont_cb">
+                    <div class="card-body">
+                        <h5 class="card-title">Arquitectura monolítica</h5>
+                        <p class="card-text">El estilo arquitectónico monolítico consiste en crear una aplicación autosuficiente que contenga absolutamente toda la funcionalidad necesaria para realizar la tarea para la cual fue diseñada, sin contar con dependencias externas que complementen su funcionalidad. En este sentido, sus componentes trabajan juntos, compartiendo los mismos recursos y memoria. En pocas palabras, una aplicación monolítica es una unidad cohesiva de código.</p>
+                    </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                    <img id="img_model_2" src="img/microservisios.png" class="card-img-top" alt="microservisios">
-                        <div class="card-body">
-                            <h5 class="card-title">Arquitectura de microservisios</h5>
-                            <p class="card-text">Una arquitectura de microservicios divide una aplicación en una serie de servicios implementables de forma independiente que se comunican a través de API. Este enfoque permite implementar y escalar cada servicio individual de forma independiente, así como la entrega rápida y frecuente de aplicaciones grandes y complejas. A diferencia de una aplicación monolítica, una arquitectura de microservicios permite a los equipos implementar nuevas funciones y hacer cambios más rápido, sin tener que volver a escribir una gran parte del código existente.</p>
-                        </div>
+            </div>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4 cont_img_model">
+                    <img src="img/microservicios.png" id="img_model_2" class="img-fluid rounded-start" alt="microservicios">
+                    </div>
+                    <div class="col-md-8 cont_cb">
+                    <div class="card-body">
+                        <h5 class="card-title">Arquitectura de microservicios</h5>
+                        <p class="card-text">Una arquitectura de microservicios divide una aplicación en una serie de servicios implementables de forma independiente que se comunican a través de API. Este enfoque permite implementar y escalar cada servicio individual de forma independiente, así como la entrega rápida y frecuente de aplicaciones grandes y complejas. A diferencia de una aplicación monolítica, una arquitectura de microservicios permite a los equipos implementar nuevas funciones y hacer cambios más rápido, sin tener que volver a escribir una gran parte del código existente.</p>
+                    </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                    <img id="img_model_3" src="img/clienteservidor.png" class="card-img-top" alt="clienteservidor">
-                        <div class="card-body">
-                            <h5 class="card-title">Arquitectura cliente-servidor</h5>
-                            <p class="card-text">La arquitectura cliente-servidor es una de las más populares en la construcción de aplicaciones en la actualidad. Básicamente se llama así a toda arquitectura en la que participan dos componentes: uno es el cliente que utiliza unos servicios, y otro es el servidor que proporciona esos servicios. Entre ambos se tiene que efectuar una comunicación de red, habitualmente mediante Internet.</p>
-                        </div>
+            </div>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4 cont_img_model">
+                    <img src="img/clienteservidor.png" id="img_model_3" class="img-fluid rounded-start" alt="clienteservidor">
+                    </div>
+                    <div class="col-md-8 cont_cb">
+                    <div class="card-body">
+                        <h5 class="card-title">Arquitectura cliente-servidor</h5>
+                        <p class="card-text">La arquitectura cliente-servidor es una de las más populares en la construcción de aplicaciones en la actualidad. Básicamente se llama así a toda arquitectura en la que participan dos componentes: uno es el cliente que utiliza unos servicios, y otro es el servidor que proporciona esos servicios. Entre ambos se tiene que efectuar una comunicación de red, habitualmente mediante Internet.</p>
+                    </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="cont">
-            <h2>Componentes de la aqreuitectura de capas</h2>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <h3>Capa de presentación</h3>
-                        <p>La capa de presentación es la cara visible del sistema, donde los usuarios interactúan directamente. Aquí es donde se diseña la interfaz de usuario y se recopilan las entradas del usuario. Esta capa se centra en la presentación y la interacción, transmitiendo los datos ingresados por el usuario a la capa de lógica de negocios para su procesamiento.</p>
+        <section class="cont_componente">
+            <h2>Componentes de la arquitectura de capas</h2>
+            <section class="cont_carrusel">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h3>Capa de presentación</h3>
+                            <p>La capa de presentación es la cara visible del sistema, donde los usuarios interactúan directamente. Aquí es donde se diseña la interfaz de usuario y se recopilan las entradas del usuario. Esta capa se centra en la presentación y la interacción, transmitiendo los datos ingresados por el usuario a la capa de lógica de negocios para su procesamiento.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Capa de lógica de negocios</h3>
+                            <p>La capa de lógica de negocios contiene las reglas y la lógica subyacente de la aplicación. Aquí es donde se toman decisiones basadas en la información proporcionada por la capa de presentación. Por ejemplo, si un usuario solicita agregar a otro usuario como amigo, esta capa verifica si la solicitud es válida según las reglas establecidas.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Capa de acceso a datos</h3>
+                            <p>La capa de acceso a datos maneja la recuperación y el almacenamiento de la información en la base de datos. Cuando la capa de lógica de negocios necesita acceder a datos específicos, se comunica con esta capa. Es responsable de garantizar que los datos se almacenen de manera segura y se recuperen eficientemente cuando sea necesario.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <h3>Capa de logica de negocios</h3>
-                        <p>La capa de lógica de negocios contiene las reglas y la lógica subyacente de la aplicación. Aquí es donde se toman decisiones basadas en la información proporcionada por la capa de presentación. Por ejemplo, si un usuario solicita agregar a otro usuario como amigo, esta capa verifica si la solicitud es válida según las reglas establecidas.</p>
-                    </div>
-                    <div class="carousel-item">
-                        <h3>Capa de acceso a datos</h3>
-                        <p>La capa de acceso a datos maneja la recuperación y el almacenamiento de la información en la base de datos. Cuando la capa de lógica de negocios necesita acceder a datos específicos, se comunica con esta capa. Es responsable de garantizar que los datos se almacenen de manera segura y se recuperen eficientemente cuando sea necesario.</p>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <img src="img/componentes.png" alt="componentes">
+                <img src="img/componentes.png" alt="componentes">
+            </section>
         </section>
     </section>
+    <footer class="text-center text-white mt-5" style="background-color: #343a40; padding: 20px 0;">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 UCundinamarca. Todos los derechos reservados.</p>
+            <p class="mb-0">
+            Desarrollado por:
+            </p>
+            <p class="mb-0">Joseph Barreto</p>
+            <p class="mb-0">Kristian Mogrovejo</p>
+            <p class="mb-0">Nicolas Rodriguez</p>
+        </div>
+    </footer>
 </body>
 </html>
