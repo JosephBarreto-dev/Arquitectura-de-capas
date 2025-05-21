@@ -1,0 +1,27 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    width: 75%;
+}
+.cont {
+    margin-top: 20px;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+.card{
+    height: auto;
+}
+#img_model_1{
+    width: 350px;
+    margin: 20px auto;
+}
+#img_model_2{
+    width: 350px;
+    margin: 20px auto;
+}
+#img_model_3{
+    width: 350px;
+    margin: 20px auto;
+}
