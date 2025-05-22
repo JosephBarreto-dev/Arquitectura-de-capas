@@ -83,20 +83,6 @@
                     </div>
                 </div>
             </div>
-<!-- 
-            <ul>
-                <li><strong>Agilidad en el desarrollo:</strong> Gracias a que cada nivel puede ser desarrollado por
-                    diferentes equipos de forma paralela, el proceso de entrega del sistema se acelera. Esto también
-                    brinda flexibilidad permitiendo a los desarrolladores utilizar los lenguajes y herramientas
-                    apropiadas para cada nivel del sistema.</li>
-                <li><strong>Mayor confiabilidad:</strong> En caso de que uno de los niveles falle, no necesariamente
-                    implica la caída total del sistema, ya que los demás niveles pueden continuar funcionando.</li>
-                <li><strong>Seguridad mejorada:</strong> Debido a que la capa de presentación no interactúa directamente
-                    con la capa de datos, se pueden implementar validaciones y filtros de seguridad en la capa lógica
-                    para dificultar ataques como la inyección SQL o accesos no autorizados.</li>
-            </ul>
-            </div> -->
-
             <div class="mb-4">
                 <h3>Desventajas</h3>
                 <p id="Desventajas">Al utilizar un patrón de arquitectura de capas pueden surgir varios problemas, especialmente durante
@@ -107,8 +93,9 @@
                     <div class="col">
                         <div class="card h-100 border-danger">
                             <div class="card-body">
-                                <h5 class="card-title">Falta de procesamiento paralelo</h5>
-                                <p class="card-text">El procesamiento suele ser secuencial entre capas, lo que puede
+                                <img src="../img/procesamiento.jpg" class="card-img-top d-block mx-auto mb-2" alt="Desventajas" style="width: 70%;">
+                                <h5 class="card-title text-center">Falta de procesamiento paralelo</h5>
+                                <p class="card-text text-center">El procesamiento suele ser secuencial entre capas, lo que puede
                                     afectar el rendimiento en sistemas de alta demanda.</p>
                             </div>
                         </div>
@@ -116,8 +103,9 @@
                     <div class="col">
                         <div class="card h-100 border-danger">
                             <div class="card-body">
-                                <h5 class="card-title">Dificultad de escalabilidad</h5>
-                                <p class="card-text">A medida que crece el sistema, puede ser difícil mantener la
+                                <img src="../img/escalabilidad.jpg" class="card-img-top d-block mx-auto mb-2" alt="Desventajas" style="width: 80%;">
+                                <h5 class="card-title text-center">Dificultad de escalabilidad</h5>
+                                <p class="card-text text-center">A medida que crece el sistema, puede ser difícil mantener la
                                     separación lógica entre las capas.</p>
                             </div>
                         </div>
@@ -125,8 +113,9 @@
                     <div class="col">
                         <div class="card h-100 border-danger">
                             <div class="card-body">
-                                <h5 class="card-title">Acoplamiento entre capas</h5>
-                                <p class="card-text">Un mal manejo de dependencias puede dificultar pruebas o
+                                <img src="../img/acoplamiento.jpg" class="card-img-top d-block mx-auto mb-2" alt="Desventajas" style="width: 75%;">
+                                <h5 class="card-title text-center">Acoplamiento entre capas</h5>
+                                <p class="card-text text-center">Un mal manejo de dependencias puede dificultar pruebas o
                                     modificaciones individuales.</p>
                             </div>
                         </div>
@@ -134,30 +123,16 @@
                     <div class="col">
                         <div class="card h-100 border-danger">
                             <div class="card-body">
-                                <h5 class="card-title">Sobrecarga de configuración</h5>
-                                <p class="card-text">La división de responsabilidades puede llevar a una sobrecarga en
+                                <img src="../img/configuracion.jpg" class="card-img-top d-block mx-auto mb-2" alt="Desventajas" style="width: 90%;">
+                                <h5 class="card-title text-center">Sobrecarga de configuración</h5>
+                                <p class="card-text text-center">La división de responsabilidades puede llevar a una sobrecarga en
                                     la configuración y el despliegue del sistema.</p>
                             </div>
                         </div>
                     </div>
-<!-- 
-                    <ul>
-                        <li><strong>Falta de procesamiento paralelo:</strong> La arquitectura de capas no se presta
-                            fácilmente al procesamiento paralelo entre las distintas capas, ya que cada una suele
-                            procesar
-                            solicitudes de manera secuencial, lo cual puede afectar el rendimiento.</li>
-                        <li><strong>Dificultad de escalabilidad:</strong> Aunque brinda legibilidad y estructura, a
-                            medida
-                            que crece el código, la acumulación de características en cada capa puede dificultar
-                            mantener la
-                            separación lógica entre ellas.</li>
-                        <li><strong>Acoplamiento entre capas:</strong> Es fundamental gestionar bien las dependencias
-                            entre
-                            capas, ya que un mal manejo puede dificultar las actualizaciones o pruebas de módulos
-                            individuales.</li>
-                    </ul> -->
                 </div>
 
+                <h3 class="mt-4">Conclusión</h3>
                 <div>
                     <p id="Conclusion">En conclusión, el uso de la arquitectura de capas es una opción viable para construir sistemas
                         grandes, escalables y mantenibles, siempre que exista una buena planificación y un equipo
