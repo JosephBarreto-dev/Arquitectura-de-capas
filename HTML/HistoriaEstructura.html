@@ -6,6 +6,7 @@
   <title>Arquitectura en capas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../CSS/general.css">
   <link rel="stylesheet" href="arquitectura.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
@@ -16,20 +17,16 @@
                 <a class="nav-link" href="introduccion.html">Intro</a>
             </li>
             <li class="nav-item">
-                <a class="nav_act nav-link active" aria-current="page" href="#">Ventajas y Desventajas</a>
+                <a class="nav-link" aria-current="page" href="ven_des.html">Ventajas y Desventajas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Historia y Estructura</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link active" href="#">Historia y Estructura</a>
             </li>
         </ul>
     </header>
-
   <main class="container mt-5">
     <section class="mb-5">
-  <h2 class="text-secondary">Historia de la Arquitectura en Capas</h2>
+  <h1>Historia de la Arquitectura en Capas</h1>
   <p>La arquitectura en capas no surgió de un día para otro; es el resultado de décadas de evolución en el desarrollo de software. A continuación, un recorrido por sus hitos clave:</p>
   
   <div class="timeline">
@@ -60,7 +57,7 @@
 </section>
 
     <section class="mb-5">
-      <h2 class="text-secondary">¿Por qué usar esta arquitectura?</h2>
+      <h2>¿Por qué usar esta arquitectura?</h2>
       <div class="row g-4">
         <div class="col-md-6">
           <div class="alert alert-success">
@@ -81,7 +78,7 @@
       </div>
     </section>
     <section class="mb-5">
-      <h2 class="text-secondary">Estructura</h2>
+      <h2>Estructura</h2>
       <p>La arquitectura en capas divide un sistema en capas horizontales que cumplen funciones específicas. Cada capa interactúa solo con sus vecinas, promoviendo independencia.</p>
       <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
         <div class="col">
@@ -124,7 +121,7 @@
       </div>
     </section>
     <section class="mb-5">
-      <h2 class="text-secondary">Separación de responsabilidades</h2>
+      <h2>Separación de responsabilidades</h2>
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><strong>Presentación:</strong> Interacción con el usuario. No contiene logica de negocio.</li>
         <li class="list-group-item"><strong >Aplicación:</strong> Controla flujos y coordina acciones. No toma decisiones de negocio.</li>
