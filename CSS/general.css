@@ -19,23 +19,5 @@ h1, h2{
 }
 
 h3 {
-<<<<<<< HEAD:ven_des.css
-    color: #495057;
-    margin-top: 1.5rem;
-}
-
-#Ventajas, #Desventajas, #Conclusion{
-    text-align: justify;
-}
-
-ul {
-    padding-left: 1.5rem;
-}
-
-ul li {
-    margin-bottom: 0.75rem;
-}
-=======
     text-align: center;
 }
->>>>>>> 68b2c32e678645dfa40fa4fe7d70f839cc5afabb:CSS/general.css
